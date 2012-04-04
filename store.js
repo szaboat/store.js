@@ -35,7 +35,7 @@
 	store.clear = function() {};
 	store.transact = function(key, defaultVal, transactionFn) {
 		var val = store.get(key);
-		if (transactionFn === null) {
+		if (transactionFn == null) {
 			transactionFn = defaultVal;
 			defaultVal = null;
 		}
